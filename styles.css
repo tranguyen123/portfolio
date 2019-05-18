@@ -88,6 +88,7 @@ header .profile-image:hover {
   background-color: #222;
   color: yellow;
 }
+@media(min-width: 600px) and (min-width: 400px) {
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
@@ -98,6 +99,11 @@ header .profile-image:hover {
   border-radius: 6px;
   transition: all .5s;
 }
+}
+@media print { 
+  /* All your print styles go here */
+  #header, #footer, #nav { display: none !important; } 
+ }
 .card:hover {
   border-color: #ff99ff;
 }
@@ -168,7 +174,7 @@ a.social:hover {
 }
 
 /* Styles for larger screens */
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 960px) {
   
   .flex {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
